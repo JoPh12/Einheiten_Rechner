@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeldUmrechnerActivity">
+
+    <Button
+        android:id="@+id/btnUmrechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="Umrechnen"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-199dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/editGeldEingabe"
+            style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+            android:layout_width="237dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginBottom="482dp"
+            android:background="#0020FF"
+            android:backgroundTint="#0003A9F4"
+            android:backgroundTintMode="add"
+            android:ems="10"
+            android:hint="Wert"
+            android:inputType="number|numberDecimal"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:textIsSelectable="true"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spnGeldEingabewährung"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="482dp"
+            android:background="#03A9F4"
+            android:popupBackground="@color/design_default_color_primary_dark" />
+
+        <TextView
+            android:id="@+id/tVGeldErgebnis"
+            android:layout_width="273dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="325dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginBottom="352dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#0727FF"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:text="Ergebnis"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textIsSelectable="true"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spnGeldErgebnisWährung"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="352dp"
+            android:background="#0016FF" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

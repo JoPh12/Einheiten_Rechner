@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Einheiten Rechner</string>
+
+    <string-array name="Geldzeichen">
+        <item>Euro</item>
+        <item>US-Dollar</item>
+        <item>Britische Pfund</item>
+    </string-array>
 </resources>
